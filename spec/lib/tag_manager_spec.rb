@@ -80,7 +80,7 @@ RSpec.describe TagManager do
 
     it 'returns false for string with irrelevant characters' do
       Rails.configuration.x.web_domain = 'domain.test'
-      expect(TagManager.instance.local_url?('https://domainn.test/')).to eq false
+      expect(TagManager.instance.local_url?('https://domain.test/')).to eq false
     end
   end
 end
